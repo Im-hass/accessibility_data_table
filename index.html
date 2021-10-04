@@ -36,7 +36,7 @@
                 <th scope="col" class="sub-head">토</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody id='tmp_table_body'>
               <tr>
                 <th rowspan="2" scope="row" class="row-sub-head">안영현<br>원장</th>
                 <th scope="row" class="time-head">오전</th>
@@ -286,6 +286,30 @@
       </div>
     </div>
   </div>
+  <script type="text/javascript">
+    changeValueColor('table1');
+    changeValueColor('table2');
+    changeValueColor('table3');
+    changeValueColor('table4');
+
+    function changeValueColor(str_table) {
+      var table = document.getElementsByClassName(str_table)[0].rows;
+      for(var i = 2; i < table.length; i++) {
+        for(var j = 2; j < 6; j++) {
+          // console.log("j : " + j);
+          // console.log(table[i].cells[j]);
+          // console.log(table[i].cells[j].innerHTML);
+          if(table[i].cells[j].innerHTML == "휴진") {
+            table[i].cells[j].style.color = "red";
+          }
+
+          if(table[i].cells[j].innerHTML == "입원환자<br>진료") {
+            table[i].cells[j].style.color = "blue";
+          }
+        }
+      }
+    }
+  </script>
 </body>
 
 </html>
