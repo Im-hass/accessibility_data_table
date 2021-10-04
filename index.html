@@ -15,7 +15,7 @@
     <div class="contents">
       <div class="content content1">
         <h2>재활의학과</h2>
-        <p>재활의학과는 ~, ~, ~를 진료합니다. 의료진은 @@원장, @@원장, @@부원장, @@@부원장으로 구성되어 있습니다.<br>입원환자 진료 시 외래 진료가 없습니다.</p>
+        <p>재활의학과는 ~, ~, ~를 진료합니다. 의료진은 @@원장, @@원장, @@부원장, @@@부원장으로 구성되어 있습니다.<br>입원환자 진료 시, 외래 진료가 없습니다.</p>
         <div class="table-wrapper">
           <table class="table1">
             <caption class="caption-hidden">
@@ -24,22 +24,22 @@
             </caption>
             <thead>
               <tr>
-                <th colspan="8" scope="col">재활의학과</th>
+                <th colspan="8" scope="col" class="subject-head">재활의학과</th>
               </tr>
               <tr>
-                <th scope="col">원장</th>
-                <th scope="col">시간</th>
-                <th scope="col">월</th>
-                <th scope="col">화</th>
-                <th scope="col">수</th>
-                <th scope="col">목</th>
-                <th scope="col">금</th>
-                <th scope="col">토</th>
+                <th scope="col" class="sub-head">원장</th>
+                <th scope="col" class="sub-head">시간</th>
+                <th scope="col" class="sub-head">월</th>
+                <th scope="col" class="sub-head">화</th>
+                <th scope="col" class="sub-head">수</th>
+                <th scope="col" class="sub-head">목</th>
+                <th scope="col" class="sub-head">금</th>
+                <th scope="col" class="sub-head">토</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <th rowspan="2" scope="row">안영현<br>원장</th>
+                <th rowspan="2" scope="row" class="row-sub-head">안영현<br>원장</th>
                 <th scope="row" class="time-head">오전</th>
                 <td>진료</td>
                 <td>휴진</td>
@@ -48,18 +48,18 @@
                 <td>진료</td>
                 <td>격주<br>진료</td>
               </tr>
-              <tr>
+              <tr class="afternoon-head-row">
                 <th scope="row" class="time-head">오후</th>
                 <td>진료</td>
                 <td>진료</td>
                 <td>진료</td>
                 <td>진료</td>
                 <td>휴진</td>
-                <td>진료없음</td>
+                <td><div class="no-clinic">진료없음</div></td>
               </tr>
 
               <tr>
-                <th rowspan="2" scope="row">박지상<br>원장</th>
+                <th rowspan="2" scope="row" class="row-sub-head">박지상<br>원장</th>
                 <th scope="row" class="time-head">오전</th>
                 <td>진료</td>
                 <td>진료</td>
@@ -68,18 +68,18 @@
                 <td>진료</td>
                 <td>격주<br>진료</td>
               </tr>
-              <tr>
+              <tr class="afternoon-head-row">
                 <th scope="row" class="time-head">오후</th>
                 <td>진료</td>
                 <td>진료</td>
                 <td>진료</td>
                 <td>휴진</td>
                 <td>진료</td>
-                <td>진료없음</td>
+                <td><div class="no-clinic">진료없음</div></td>
               </tr>
 
               <tr>
-                <th rowspan="2" scope="row">김태완<br>부원장</th>
+                <th rowspan="2" scope="row" class="row-sub-head">김태완<br>부원장</th>
                 <th scope="row" class="time-head">오전</th>
                 <td>진료</td>
                 <td>진료</td>
@@ -88,18 +88,18 @@
                 <td>진료</td>
                 <td>격주<br>진료</td>
               </tr>
-              <tr>
+              <tr class="afternoon-head-row">
                 <th scope="row" class="time-head">오후</th>
                 <td>진료</td>
                 <td>진료</td>
                 <td>휴진</td>
                 <td>입원환자<br>진료</td>
                 <td>진료</td>
-                <td>진료없음</td>
+                <td><div class="no-clinic">진료없음</div></td>
               </tr>
 
               <tr>
-                <th rowspan="2" scope="row">김동원<br>부원장</th>
+                <th rowspan="2" scope="row" class="row-sub-head">김동원<br>부원장</th>
                 <th scope="row" class="time-head">오전</th>
                 <td>진료</td>
                 <td>진료</td>
@@ -108,14 +108,14 @@
                 <td>진료</td>
                 <td>격주<br>진료</td>
               </tr>
-              <tr>
+              <tr class="afternoon-head-row">
                 <th scope="row" class="time-head">오후</th>
                 <td>진료</td>
                 <td>진료</td>
                 <td>진료</td>
                 <td>휴진</td>
                 <td>진료</td>
-                <td>진료없음</td>
+                <td><div class="no-clinic">진료없음</div></td>
               </tr>
             </tbody>
           </table>
@@ -133,7 +133,7 @@
             </caption>
             <thead>
               <tr>
-                <th colspan="8" scope="col">내과</th>
+                <th colspan="8" scope="col" class="subject-head">내과</th>
               </tr>
               <tr>
                 <th scope="col">원장</th>
@@ -148,7 +148,7 @@
             </thead>
             <tbody>
               <tr>
-                <th rowspan="2" scope="row">김대용<br>원장</th>
+                <th rowspan="2" scope="row" class="row-sub-head">김대용<br>원장</th>
                 <th scope="row" class="time-head">오전</th>
                 <td>진료</td>
                 <td>진료</td>
@@ -157,18 +157,18 @@
                 <td>진료</td>
                 <td>격주<br>진료</td>
               </tr>
-              <tr>
+              <tr class="afternoon-head-row">
                 <th scope="row" class="time-head">오후</th>
                 <td>휴진</td>
                 <td>진료</td>
                 <td>휴진</td>
                 <td>진료</td>
                 <td>진료</td>
-                <td>진료없음</td>
+                <td><div class="no-clinic">진료없음</div></td>
               </tr>
 
               <tr>
-                <th rowspan="2" scope="row">박재영<br>부원장</th>
+                <th rowspan="2" scope="row" class="row-sub-head">박재영<br>부원장</th>
                 <th scope="row" class="time-head">오전</th>
                 <td>진료</td>
                 <td>진료</td>
@@ -177,14 +177,14 @@
                 <td>진료</td>
                 <td>격주<br>진료</td>
               </tr>
-              <tr>
+              <tr class="afternoon-head-row">
                 <th scope="row" class="time-head">오후</th>
                 <td>진료</td>
                 <td>진료</td>
                 <td>진료</td>
                 <td>휴진</td>
                 <td>진료</td>
-                <td>진료없음</td>
+                <td><div class="no-clinic">진료없음</div></td>
               </tr>
             </tbody>
           </table>
@@ -193,7 +193,7 @@
 
       <div class="content content3">
         <h2>정형외과</h2>
-        <p>정형외과는 ~, ~, ~를 진료합니다. 의료진은 @@원장으로 구성되어 있습니다.<br>입원환자 진료 시 외래 진료가 없습니다.</p>
+        <p>정형외과는 ~, ~, ~를 진료합니다. 의료진은 @@원장으로 구성되어 있습니다.<br>입원환자 진료 시, 외래 진료가 없습니다.</p>
         <div class="table-wrapper">
           <table class="table3">
             <caption class="caption-hidden">
@@ -202,7 +202,7 @@
             </caption>
             <thead>
               <tr>
-                <th colspan="8" scope="col">정형외과</th>
+                <th colspan="8" scope="col" class="subject-head">정형외과</th>
               </tr>
               <tr>
                 <th scope="col">원장</th>
@@ -217,7 +217,7 @@
             </thead>
             <tbody>
               <tr>
-                <th rowspan="2" scope="row">하정민<br>원장</th>
+                <th rowspan="2" scope="row" class="row-sub-head">하정민<br>원장</th>
                 <th scope="row" class="time-head">오전</th>
                 <td>진료</td>
                 <td>입원환자<br>진료</td>
@@ -226,14 +226,14 @@
                 <td>진료</td>
                 <td>격주<br>진료</td>
               </tr>
-              <tr>
+              <tr class="afternoon-head-row">
                 <th scope="row" class="time-head">오후</th>
                 <td>진료</td>
                 <td>진료</td>
                 <td>휴진</td>
                 <td>진료</td>
                 <td>진료</td>
-                <td>진료없음</td>
+                <td><div class="no-clinic">진료없음</div></td>
               </tr>
             </tbody>
           </table>
@@ -251,7 +251,7 @@
           <table class="table4">
             <thead>
               <tr>
-                <th colspan="8" scope="col">신경외과</th>
+                <th colspan="8" scope="col" class="subject-head">신경외과</th>
               </tr>
               <tr>
                 <th scope="col">원장</th>
@@ -266,7 +266,7 @@
             </thead>
             <tbody>
               <tr>
-                <th rowspan="2" scope="row">김재우<br>원장</th>
+                <th rowspan="2" scope="row" class="row-sub-head">김재우<br>원장</th>
                 <th scope="row" class="time-head">오전</th>
                 <td>진료</td>
                 <td>진료</td>
@@ -275,14 +275,14 @@
                 <td>진료</td>
                 <td>격주<br>진료</td>
               </tr>
-              <tr>
+              <tr class="afternoon-head-row">
                 <th scope="row" class="time-head">오후</th>
                 <td>진료</td>
                 <td>진료</td>
                 <td>진료</td>
                 <td>휴진</td>
                 <td>휴진</td>
-                <td>진료없음</td>
+                <td><div class="no-clinic">진료없음</div></td>
               </tr>
             </tbody>
           </table>
