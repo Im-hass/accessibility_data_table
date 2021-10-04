@@ -7,6 +7,7 @@
 .contents-wrapper {
   width: calc(100% - 25px);
   margin: 1rem auto;
+  min-width: 530px;
 }
 
 h1 {
@@ -68,8 +69,9 @@ h2::before {
 .table3 th,
 .table4 th {
   width: 50px;
-  height: 35px;
+  height: 50px;
   color: white;
+  font-size: 1.3rem;
 }
 
 .table1 .sub-head,
@@ -93,7 +95,8 @@ h2::before {
 .table3 .subject-head,
 .table4 .subject-head{
   color: white;
-  height: 40px;
+  font-size: 1.5rem;
+  height: 50px;
   border-bottom: 2px solid #525252;
 }
 
@@ -102,6 +105,7 @@ h2::before {
 .table3 .time-head,
 .table4 .time-head {
   height: 40px;
+  font-size: 1rem;
   color: #747474;
   border-right: 1px solid #525252;
 }
