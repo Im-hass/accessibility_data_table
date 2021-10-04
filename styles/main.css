@@ -118,6 +118,7 @@ h2::before {
 }
 
 td {
+  height: 50px;
   font-size: 1rem;
   border-right: 1px solid #525252;
 }
@@ -170,7 +171,7 @@ td {
   clip-path: polygon(0 0, 0 0, 0 0);
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 700px) {
   .contents-wrapper {
     width: 100%;
   }
@@ -179,6 +180,7 @@ td {
   .table2 th,
   .table3 th,
   .table4 th {
+    height: 40px;
     font-size: 1.1rem;
   }
 
@@ -190,6 +192,7 @@ td {
   }
 
   td {
+    height: 35px;
     font-size: 0.8rem;
   }
 }
@@ -214,7 +217,8 @@ td {
   }
 }
 
-
-
-/* 원래 크기 800px */
-/* 1000px보다 작아지면 (옆에 메뉴바 사라지고) 800px */
+@media screen and (min-width: 800px) {
+  .contents-wrapper {
+    max-width: 800px;
+  }
+}
