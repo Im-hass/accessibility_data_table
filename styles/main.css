@@ -7,7 +7,6 @@
 .contents-wrapper {
   width: calc(100% - 25px);
   margin: 1rem auto;
-  min-width: 530px;
 }
 
 h1 {
@@ -119,6 +118,7 @@ h2::before {
 }
 
 td {
+  font-size: 1rem;
   border-right: 1px solid #525252;
 }
 
@@ -170,7 +170,49 @@ td {
   clip-path: polygon(0 0, 0 0, 0 0);
 }
 
+@media screen and (max-width: 560px) {
+  .contents-wrapper {
+    width: 100%;
+  }
 
+  .table1 th,
+  .table2 th,
+  .table3 th,
+  .table4 th {
+    font-size: 1.1rem;
+  }
+
+  .table1 .subject-head,
+  .table2 .subject-head,
+  .table3 .subject-head,
+  .table4 .subject-head{
+    font-size: 1.25rem;
+  }
+
+  td {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .contents-wrapper {
+    min-width: 425px;
+  }
+
+  .table1 th,
+  .table2 th,
+  .table3 th,
+  .table4 th {
+    font-size: 0.8rem;
+  }
+
+  .table1 .subject-head,
+  .table2 .subject-head,
+  .table3 .subject-head,
+  .table4 .subject-head{
+    font-size: 1rem;
+  }
+}
 
 
 
