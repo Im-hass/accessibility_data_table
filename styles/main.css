@@ -221,4 +221,12 @@ td {
   .contents-wrapper {
     max-width: 800px;
   }
+
+  .contents h2 {
+    font-size: 1.5rem;
+  }
+
+  .contents p {
+    font-size: 1rem;
+  }
 }
