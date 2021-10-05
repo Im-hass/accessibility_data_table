@@ -105,10 +105,8 @@
 ## 7. lighthouse 접근성 및 SEO 분석
 
 ### 분석 결과
+![FireShot Capture 038 - 등대 보고서 뷰어 - googlechrome github io](https://user-images.githubusercontent.com/77854486/136018202-b3049040-0dbd-4f9c-9620-0ccbc5a04a17.jpg)
 
-- HTML 파일 : [im-hass.github.io-20211005T051402.html](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c4bb5267-77b4-4531-bd7c-7ddbeaacecdc/im-hass.github.io-20211005T051402.html)
-
-![https://user-images.githubusercontent.com/77854486/135919052-03b75313-4888-457a-aff5-89298a4c33a9.png](https://user-images.githubusercontent.com/77854486/135919052-03b75313-4888-457a-aff5-89298a4c33a9.png)
 <br>
 
 ## 8. 회고
