@@ -168,7 +168,6 @@ td {
   height: 1px;
   margin: -1px;
   overflow: hidden;
-  clip-path: polygon(0 0, 0 0, 0 0);
 }
 
 @media screen and (max-width: 700px) {
