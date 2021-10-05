@@ -64,3 +64,71 @@
 ![image](https://user-images.githubusercontent.com/77854486/135838091-6b791504-a8cb-4383-9b72-4552cc4350d7.png)
 <br>
 
+## 4. 체크 리스트
+
+- [x]  테이블에 대한 제목을 제공하였는가
+- [x]  테이블에 대한 설명을 제공하였는가
+- [x]  테이블이 구조, 그룹화 되어 있는가
+- [x]  `<th>`에 `scope` 속성이 지정되어 있는가
+- [x]  내용이 비어있는 셀(`th`)은 없는가
+- [x]  셀(`th`)이 잘 구분되어 있는가
+- [x]  콘텐츠를 보는 것에 지장이 없는가
+- [ ]  불필요하게 사용되는 태그, 속성은 없는가
+<br>
+
+## 5. 구현
+
+**Github 링크 :** [https://github.com/Im-hass/accessibility_data_table](https://github.com/Im-hass/accessibility_data_table)
+<br>
+
+## 6. 문법 검사
+
+### HTML Markup 검사
+
+- [검사기](https://validator.w3.org/nu/)
+
+![https://user-images.githubusercontent.com/77854486/135916502-34e87c4f-b725-4757-9013-363edba24949.png](https://user-images.githubusercontent.com/77854486/135916502-34e87c4f-b725-4757-9013-363edba24949.png)
+
+### CSS 유효성 검사
+
+- [검사기](http://www.css-validator.org/validator.html.ko)
+
+![https://user-images.githubusercontent.com/77854486/135916036-8122d584-d30c-45b5-8da9-90f0a31a74f3.png](https://user-images.githubusercontent.com/77854486/135916036-8122d584-d30c-45b5-8da9-90f0a31a74f3.png)
+
+### W3C 통합 검사기
+
+- [검사기](https://validator.w3.org/unicorn/)
+
+![https://user-images.githubusercontent.com/77854486/135917441-f412bb39-f75c-4467-af27-9d11752ad9ab.png](https://user-images.githubusercontent.com/77854486/135917441-f412bb39-f75c-4467-af27-9d11752ad9ab.png)
+<br>
+
+## 7. lighthouse 접근성 및 SEO 분석
+
+### 분석 결과
+
+- HTML 파일 : [im-hass.github.io-20211005T051402.html](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c4bb5267-77b4-4531-bd7c-7ddbeaacecdc/im-hass.github.io-20211005T051402.html)
+
+![https://user-images.githubusercontent.com/77854486/135919052-03b75313-4888-457a-aff5-89298a4c33a9.png](https://user-images.githubusercontent.com/77854486/135919052-03b75313-4888-457a-aff5-89298a4c33a9.png)
+<br>
+
+## 8. 회고
+
+접근성이 좋지 않은 웹 페이지를 찾는 것은 쉬웠으나, 데이터 테이블이 있는 것을 찾으려니 조금 어려움이 있었다. 대부분 비슷하게 만들어져 있었고, 그 중 접근성이 떨어지는 것을 위주로 선정하였다.
+
+table이 복잡해지면 `scope`와 `id`, `header` 속성을 적절히 이용하여 정보를 주는 것이 좋다고 하는데... 이 부분을 제대로 구현 못 한 것이 조금 아쉽다. 시도는 해보았지만, 전부 `id`로 쓰게 된다 거나... 아직 세 가지를 적절히 사용하는 것에 미흡한 부분이 있다.
+
+여러 복잡한 모양의 테이블들을 보며 조금 더 다양하게 만들어 볼 필요성을 느꼈다. 그리고 꼭 하나의 테이블로 합쳐서 만들어야겠다고 생각하였는데, 스크린 리더로 읽기에는 불편해 보이지만 따로 따로 만들어 둔 것이 눈으로 보기에는 편한 것 같다.
+
+처음에는 더 보기 편하게 진료, 휴진을 O, X로 표현할까 하였지만 한글로 보는 것이 어르신들은 편하다는 주변 의견이 있어서 반영하였다.
+
+이번 프로젝트를 통해 처음으로 스크린 리더를 사용해 보는 기회가 생겼는데, 이걸 쓰는 사람들이 얼마나 웹 사용에 불편함을 겪을 지 직접 알게 되었다. 디테일하게 어떤 부분이 어떻게 만들어져야 할지 감이 잡히는 것 같다.
+
+또한 비어 있는 셀에 대한 처리나, WCAG 가이드 등을 찾아보며 생각지도 못 한 부분에서 웹 사용에 어려움이 생길 수 있다는 것을 알 수 있었다.
+
+아쉬운 점은 분석 결과는 굉장히 좋게 나왔으나... 스크린 리더로 읽기에 내 데이터 테이블이 그렇게 좋다고 느껴지지는 않았다. 스크린 리더 사용에 익숙하지 않은 것도 있겠지만, 대체 이걸 듣고 어떻게 이해할 수 있지? 싶은 생각이 조금 들었다.
+
+물론 예시로 잘 만들어진 우체국 페이지도 듣기 좋은건 아니었다... 그런데 그 표는 세로 th, 가로 th를 꼭 먼저 읽어주고 td를 읽어주었는데, 이게 잘 반영이 안 되는 것 같다.
+
+복잡한 테이블이라 그런가 싶어 id, header 속성으로 해보았는데도 먹히지 않는 것은 도대체 왜... 방법을 조금 더 찾아볼 필요가 있다.
+
+추가로 Github Page branch가 꼬여서 고생을 몇 번 한 적이 있는데, 이번에 주구장창 쓰게 되며 사용이 조금 능숙해 진 것 같아서 뿌듯하다. 너무 남발한 것 같아서 조금 자제해야겠다는 생각이 들었다. 제발, 진짜 완성되었다 싶을 때 올리길...
