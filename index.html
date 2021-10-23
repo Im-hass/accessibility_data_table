@@ -14,25 +14,25 @@
     <h1>외래시간표</h1>
     <div class="contents">
       <div class="content">
-        <table>
+        <table class="table1">
           <caption class="caption-hidden">
             재활의학과 안영현 원장, 시간, 월, 화, 수, 목, 금, 토, 오전, 오후로 구성.
           </caption>
           <tbody>
-            <tr>
-              <th rowspan="3">
+            <tr class="table-row">
+              <th scope="rowgroup" rowspan="3" class="main-head">
                 재활의학과<br>안영현 원장
               </th>
-              <th>시간</th>
-              <td>월</td>
-              <td>화</td>
-              <td>수</td>
-              <td>목</td>
-              <td>금</td>
-              <td>토</td>
+              <th scope="col" class="sub-head">시간</th>
+              <th scope="col" class="sub-head">월</th>
+              <th scope="col" class="sub-head">화</th>
+              <th scope="col" class="sub-head">수</th>
+              <th scope="col" class="sub-head">목</th>
+              <th scope="col" class="sub-head">금</th>
+              <th scope="col" class="sub-head">토</th>
             </tr>
-            <tr>
-              <th>오전</th>
+            <tr class="table-row">
+              <th scope="row" class="sub-head">오전</th>
               <td>진료</td>
               <td>휴진</td>
               <td>진료</td>
@@ -40,8 +40,8 @@
               <td>진료</td>
               <td>격주<br>진료</td>
             </tr>
-            <tr>
-              <th>오후</th>
+            <tr class="table-row">
+              <th scope="row" class="sub-head">오후</th>
               <td>진료</td>
               <td>진료</td>
               <td>진료</td>

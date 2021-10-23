@@ -5,13 +5,14 @@
 }
 
 .contents-wrapper {
-  width: calc(100% - 25px);
+  width: calc(100% - 15px);
   margin: 1rem auto;
 }
 
 h1 {
   text-align: center;
-  font-size: 2.5rem;
+  font-weight: normal;
+  font-size: 1.8rem;
 }
 
 h1::after {
@@ -23,7 +24,8 @@ h1::after {
   background-color: #0099CC;
 }
 
-.caption-hidden, .no-clinic {
+.caption-hidden,
+.no-clinic {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -31,15 +33,103 @@ h1::after {
   overflow: hidden;
 }
 
-
-
-/* 임시 */
 table {
   width: 100%;
   border-collapse: collapse;
-  border: 1px solid #525252;
 }
 
-th, td {
-  border: 1px solid #525252;
+.main-head {
+  width: 180px;
+  color: #FFFFFF;
+  font-size: 1rem;
+  background-color: #0099CC;
+  border: 1px solid #0099CC;
+}
+
+.main-head::first-line {
+  font-size: 0.95rem;
+  font-weight: normal;
+}
+
+.table-row {
+  height: 40px;
+}
+
+.sub-head {
+  background-color: #F5F5F5;
+}
+
+.sub-head,
+.table1 td {
+  width: 70px;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: normal;
+  color: #333333;
+  border: 1px solid #DDDDDD;
+}
+
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .main-head {
+    font-size: 0.8rem;
+  }
+  
+  .main-head::first-line {
+    font-size: 0.75rem;
+    font-weight: normal;
+  }
+
+  .sub-head,
+  .table1 td {
+    font-size: 0.7rem;
+  }
+
+  .table-row {
+    height: 35px;
+  }
+
+  .table-row:nth-child(2) {
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  h1 {
+    font-size: 1.3rem;
+  }
+  
+  .sub-head,
+  .table1 td {
+    font-size: 0.6rem;
+  }
+
+  .table-row {
+    height: 30px;
+  }
+
+  .table-row:nth-child(2) {
+    height: 35px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .contents-wrapper {
+    max-width: 800px;
+  }
+
+  .contents-wrapper h1 {
+    font-size: 1.5rem;
+  }
+
+  .table-row {
+    height: 40px;
+  }
+
+  .table-row:nth-child(2) {
+    height: 55px;
+  }
 }
