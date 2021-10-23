@@ -63,6 +63,29 @@
       </div>
     </div>
   </div>
+
+  <script type="text/javascript">
+    changeValueColor('table');
+
+    function changeValueColor(tag_name) {
+      var table = document.getElementsByTagName(tag_name)[0].rows;
+      for(var i = 2; i < table.length; i++) {
+        for(var j = 2; j < 6; j++) {
+          // console.log("j : " + j);
+          // console.log(table[i].cells[j]);
+          // console.log(table[i].cells[j].innerHTML);
+          if(table[i].cells[j].innerHTML == "휴진") {
+            table[i].cells[j].style.color = "red";
+            table[i].cells[j].style.fontWeight = "bold";
+          }
+
+          if(table[i].cells[j].innerHTML == "입원환자<br>진료") {
+            table[i].cells[j].style.color = "blue";
+          }
+        }
+      }
+    }
+  </script>
 </body>
 
 </html>
