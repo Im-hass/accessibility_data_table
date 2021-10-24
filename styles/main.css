@@ -24,6 +24,35 @@ h1::after {
   background-color: #0099CC;
 }
 
+.content {
+  position: relative;
+}
+
+.content table {
+  margin-top: 10px;
+}
+
+.content .table4,
+.content .table8 {
+  margin-top: 15px;
+}
+
+.content p {
+  width: 200px;
+  margin: 5px auto;
+  padding-left: 20px;
+  font-size: 0.5rem;
+}
+
+.content p span {
+  color: #0033CF;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
 .caption-hidden,
 .no-clinic {
   position: absolute;
@@ -33,17 +62,34 @@ h1::after {
   overflow: hidden;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
 .main-head {
-  width: 180px;
+  width: 200px;
   color: #FFFFFF;
   font-size: 1rem;
+}
+
+.table1 .main-head,
+.table2 .main-head,
+.table3 .main-head,
+.table4 .main-head {
   background-color: #0099CC;
   border: 1px solid #0099CC;
+}
+
+.table5 .main-head,
+.table6 .main-head {
+  background-color: #0066CC;
+  border: 1px solid #0066CC;
+}
+
+.table7 .main-head {
+  background-color: #333399;
+  border: 1px solid #333399;
+}
+
+.table8 .main-head {
+  background-color: #6633CC;
+  border: 1px solid #6633CC;
 }
 
 .main-head::first-line {
@@ -60,7 +106,7 @@ table {
 }
 
 .sub-head,
-.table1 td {
+table td {
   width: 70px;
   text-align: center;
   font-size: 0.8rem;
@@ -84,7 +130,7 @@ table {
   }
 
   .sub-head,
-  .table1 td {
+  table td {
     font-size: 0.7rem;
   }
 
@@ -98,12 +144,26 @@ table {
 }
 
 @media screen and (max-width: 450px) {
+  .contents-wrapper {
+    width: calc(100% - 10px);
+    margin: 1rem auto;
+  }
+
   h1 {
     font-size: 1.3rem;
   }
+
+  .main-head {
+    font-size: 0.65rem;
+  }
+  
+  .main-head::first-line {
+    font-size: 0.6rem;
+    font-weight: normal;
+  }
   
   .sub-head,
-  .table1 td {
+  table td {
     font-size: 0.6rem;
   }
 
