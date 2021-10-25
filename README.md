@@ -79,8 +79,6 @@
     
     ![https://user-images.githubusercontent.com/77854486/135838091-6b791504-a8cb-4383-9b72-4552cc4350d7.png](https://user-images.githubusercontent.com/77854486/135838091-6b791504-a8cb-4383-9b72-4552cc4350d7.png)
 
-### 3-3. 레이아웃
-![image](https://user-images.githubusercontent.com/77854486/135838091-6b791504-a8cb-4383-9b72-4552cc4350d7.png)
 <br>
 
 ## 4. 체크 리스트
