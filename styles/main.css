@@ -21,7 +21,7 @@ h1::after {
   display: block;
   width: 46px;
   height: 5px;
-  background-color: #0099CC;
+  background-color: #42678F;
 }
 
 .content {
@@ -64,7 +64,7 @@ table {
 
 .main-head {
   width: 200px;
-  color: #FFFFFF;
+  color: #F5F5F5;
   font-size: 1rem;
 }
 
@@ -72,8 +72,8 @@ table {
 .table2 .main-head,
 .table3 .main-head,
 .table4 .main-head {
-  background-color: #0099CC;
-  border: 1px solid #0099CC;
+  background-color: #42678F;
+  border: 1px solid #42678F;
 }
 
 .table5 .main-head,

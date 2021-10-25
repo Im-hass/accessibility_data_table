@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="워크재활의학과병원의 진료 안내 시간표를 개선한 페이지입니다. 네비게이션을 제외한 데이터 테이블 8개를 포함하고 있습니다.">
   <title>워크재활의학과병원 / 진료 안내 / 진료 시간표</title>
   <link rel="stylesheet" href="styles/main.css" />
 </head>
@@ -334,7 +335,7 @@
 
     function isNoClinic(clinicText) {
       if(clinicText.innerHTML === "휴진") {
-        clinicText.style.color = "red";
+        clinicText.style.color = "#D64000";
         clinicText.style.fontWeight = "bold";
       } else if(clinicText.innerHTML === "입원환자<br>진료") {
         clinicText.style.color = "#0033CF";
